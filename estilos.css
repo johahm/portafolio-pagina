@@ -1,0 +1,335 @@
+body {
+    font-family:"poppins";
+    font-weight: 900;
+    margin: 0; /*quitar border blanco de la pagina*/
+    padding: 0;/*quitar border blanco de la pagina*/
+    background: #ccc;
+}
+
+
+p {
+  font-size: 20px; /*tamaño de texto*/
+}
+
+li {
+   list-style: none; /*lista sin puntos*/
+   margin-right: 25px; /*mrgen a la derecha entre la lista*/
+
+}
+
+/*para colocar el menu a un lado del logo, se necesita tener la etiqueta de nav contenida dentro de otra etiqueta llamada <div>, para despues ser manipulados en css*/
+
+
+.primer-elemento { /*estoy llamando a la clase que creamos*/
+  color: blue;
+}
+
+#segundo {
+    color: brown;
+}
+
+.menu  {
+    display: flex; /*uno al lado del otro*/
+    justify-content:space-between; /*espaciado entre el logo y lista*/
+    align-items: center;
+}
+
+ul {
+   display: flex;
+}
+
+a {/*elemento*/
+  text-decoration: none
+  ;
+  font-weight: 900;
+  color: #EFF8FC ;
+  font-size: 14px;
+  background: #1F5571;
+  /*padding: 15px ; espaciado interno del elemento*/
+  /*padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;*/
+  padding: 20px 30px 20px 30px; /*menos codigo con las mismas condiciones*/
+  
+}
+
+.titular {
+    text-align: center;
+    margin-top: 200px; /*para bajar el texto*/
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0; /*para quitar espacio del h1*/
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px; /*espacio debajo del h2 baja la linea de abajo*/
+}
+
+header {
+    background: url(./img/fondo2.jpg);
+    height: 100vh;/*hv elemento para que ocupe el 100% del alto de la ventana*/
+    background-size: cover;
+}
+
+
+.contenedor {
+   max-width: 1280px;
+   width: 90%;
+   margin: auto; /*elementos centrados*/
+}
+
+/*Arranca seccion sobre mi*/
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;/*texto en negrita*/
+
+}
+
+.contenedor-sobremi {
+    display:flex ;/*uno al lado del otro*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafo-y-boton {
+    width: 42%;
+}
+
+.contenedor-parrafo-y-boton p {
+    font-size: 18px;
+}
+
+.parrafo-final {
+    margin-bottom: 30px;
+}
+
+.contenedor-servicios {
+    display: flex; /* 1 por fila*/
+    flex-wrap: wrap; /* detecta la cantidad por fila*/
+    justify-content: space-around;/*separa columnas*/
+    
+}
+
+.servicio {
+    width: 25%; /*para colocar tres por fila*/
+    padding: 38px;
+    border-radius: 10px; /*borde redondeado*/
+    margin-bottom: 40px; /*para separar las cajas de colores*/
+    color: #fff;
+}
+
+.violeta {
+    background: #5055df;
+}
+
+.celeste {
+    background: #40a8fa;
+}
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio img {
+    float: right; /*imag a la derecha*/
+    height: 80px;
+}
+
+.servicio p {
+    font-size: 18px;
+    height: 250px; /*para que la img se mantenga en la misma posicion*/
+}
+
+.contenedor-porque {
+    display: flex;
+    justify-content: space-around; /*separacion entre columnas*/
+    text-align: center;
+}
+
+.contenedor-porque h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contenedor-porque p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.porque-singular {
+    width: 28%;
+   
+}
+
+#blog {
+ background: #f9fafc;
+ padding-top: 50px;/*separar la palabra blog del color*/
+ padding-bottom: 50px;
+
+}
+
+.contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicacion {
+    width: 30%;
+    box-shadow: 10px 1px 14px #ccc;
+    padding-bottom: 20px;
+}
+
+#blog img {
+    width: 100%; /*para que la imagen ocupe el 100% del cuadro*/
+}
+
+#blog h4 {
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#blog p {
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+
+#blog a {
+    display: inline-block;/*convertir el boton de un elemento a un elemento en bloque*/
+    margin-left: 20px;/*margen a la izquierda*/
+}
+
+#que-esperas {
+    background:linear-gradient(rgba(84,93,220,.98), rgba(96,71,245,.9));/*para colores degradados*/
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+#que-esperas h3 {
+   font-size: 23px;
+   color: white;
+   margin-bottom: 40px;
+}
+
+#que-esperas a {
+    padding: 20px 45px 20px 45px;
+    transition: 1s; /*transicion al salir del texto del boton*/
+}
+
+#que-esperas a:hover { /*efectos al pasar el mouse por el boton*/
+    color:black;
+    transition: 1s; /*transicion al entrar al texto del boton*/
+    transform: scale(1.2); /*efecto crecer el boton al pasar el mouse*/
+    /*transform: rotate(360deg); para rotar el boton, pero se recomienda en textos o imagenes*/
+    display: inline-block; /*convertir el boton en elemento de bloque*/
+    border-radius: 20px;
+
+}
+
+#whatsapp a {
+    background: none;/*quitar fondo de color al icno whatsapp*/
+    position: fixed;/*elemento whastsapp se queda fijo*/
+    top: 85%;/*coloca la posisicion del elemento*/
+    right: 3%; /*elemento imagen a la derecha*/
+    
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    /*se va a plicar cuando el maximo de ancho sea de 480px*/
+  nav {
+      position: absolute; /*posicionan un elemento en absoluto*/
+      top: 70px;
+      left: 0px;/*posicion izquierda*/
+      background: #5cb8ff;
+      width: 100%; /*ancho del color de fondo*/
+      display: none;
+  }
+  nav .lista {
+      flex-direction: column;/*menu para movil uno debajo del otro*/
+      display: flex;
+
+  }
+
+  .menu-icon {
+      display: block;/*mostramos el elemento*/
+      width: 25px;
+      
+  }
+
+.titular {
+    margin-top: 54px;
+}
+
+h1 {
+    font-size: 49px;
+}
+
+h2 {
+    font-size: 19px;
+}
+
+.contenedor-sobremi {
+    flex-direction: column;/*elemento uno abajo del otro*/
+}
+
+.contenedor-parrafo-y-boton {
+    width: 90%;
+}
+
+.contenedor-servicios {
+    flex-direction: column;
+
+}
+
+.servicio {
+    width: 290px;
+    margin: auto;
+    margin-bottom: 15px;
+
+}
+
+h3 {
+    font-size: 46px;
+}
+
+.contenedor-porque {
+    flex-direction: column;
+}
+
+.porque-singular {
+    width: 95%;
+}
+
+.contenedor-publicaciones {
+    flex-direction: column;   
+}
+
+.publicacion {
+ width: 85%;
+ margin: auto;
+}
+
+.imagen-sobremi {
+    width: 90%;
+}
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    header {
+        height: 53vh;
+    }
+}
